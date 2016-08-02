@@ -3,6 +3,7 @@
 email : imahmoodzamani@gmail.com
 
 #Dependencies
+to install devDependencies run this command 
 ```
 npm install
 ```
