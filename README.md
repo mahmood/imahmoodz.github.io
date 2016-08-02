@@ -2,6 +2,10 @@
 
 email : imahmoodzamani@gmail.com
 
+#Dependencies
+```
+npm install
+```
 #License
 Created by Mahmood Zamani - Aguest 2
 
