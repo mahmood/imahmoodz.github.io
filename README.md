@@ -1,5 +1,5 @@
-#Mahmood Zamani's Persoanl Blog
-
+#Overviews
+Mahmood Zamani's simple static blog
 email : imahmoodzamani@gmail.com
 
 #Dependencies
