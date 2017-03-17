@@ -1,0 +1,46 @@
+// Minxins:
+// =======
+
+@mixin font-face($family,$src,$weight: normal,$style: normal) {
+    @font-face {
+        font-family : $family;
+        src         : url('#{$src}.woff') format('woff');
+        font-style  : $style;
+        font-weight : $weight;
+    }
+}
+@mixin font-icon($family,$src,$weight: normal,$style: normal) {
+    @font-face {
+        font-family : $family;
+        src         : url('#{$src}.eot?5k8cdw');
+        src         : url('#{$src}.eot?#iefix5k8cdw') format('embedded-opentype'),
+                      url('#{$src}.woff?5k8cdw') format('woff'),
+                      url('#{$src}.ttf?5k8cdw') format('truetype'),
+                      url('#{$src}.svg?5k8cdw#zigorat') format('svg');
+        font-style  : $style;
+        font-weight : $weight;
+    }
+}
+@mixin border-radius($number) {
+    -webkit-border-radius : $number;
+    -moz-border-radius    : $number;
+    -o-border-radius      : $number;
+    border-radius         : $number;
+}
+@mixin transform($transform){
+    -webkit-transform     : $transform;
+    -moz-transform        : $transform;
+    -ms-transform         : $transform;
+    -o-transform          : $transform;
+    transform             : $transform;
+}
+@mixin font-smoothing($value: on) {
+    @if $value == on {
+        -webkit-font-smoothing    : antialiased;
+        -moz-osx-font-smoothing   : grayscale;
+    }
+    @else {
+        -webkit-font-smoothing    : subpixel-antialiased;
+        -moz-osx-font-smoothing   : auto;
+    }
+}

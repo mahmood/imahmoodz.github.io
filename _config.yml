@@ -1,0 +1,21 @@
+# Site settings
+title: محمود زمانی
+email: imahmoodzamani@gmail.com
+description: Mahmood Zamani's personal blog.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://mahmoodzamani.ir" 
+twitter_username: imahmoodz
+github_username:  imahmoodz
+codepen_username: imahmoodz
+instagram_username: imahmoodz
+
+# Build settings
+markdown: kramdown
+redcarpet:
+  extensions: ["strikethrough"]
+
+gems: [jekyll-paginate]
+
+# Paginate settings
+paginate: 2
+paginate_path: "/page:num/"

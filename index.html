@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% for post in paginator.posts %}
+    <article class="post grid__col">
+      <header>
+        <h2 class="post--title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        <h4 class="post--time">
+          <time>
+            {{ post.jalali_date | date: "%b %-d, %Y" }}
+          </time>
+        </h4>
+      </header>
+
+
+      <!--<h3 class="post--more"><a href="{{ post.url | prepend: site.baseurl }}">ادامه نوشته ...</a></h3>-->
+    </article>
+{% endfor %}

@@ -1,0 +1,25 @@
+// Variables:
+// =========
+
+
+// Configuration
+$direction   : rtl;
+$line-height : 1.618rem;
+
+// Fonts
+$Sahel-regular    : "Sahel";
+$Sahel-bold       : "Sahel-Bold";
+$font-icon        : "icomoon";
+
+// Grid
+$breakpoint-large      : 58rem;
+$breakpoint-medium     : 36rem;
+$breakpoint-small      : 425px;
+
+// Colors
+$c-white        : #ffffff;
+$c-blue         : #0076b0;
+$c-dark         : #2b3c52;
+$a-dark         : #383838;
+$c-red          : #e74c3c;
+$color-hover    : darken(#e74c3c, 10%);

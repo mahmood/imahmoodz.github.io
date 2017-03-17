@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <section class="container">
+      {% include header.html %}
+
+      <main role="main" class="grid">
+        <div class="grid__col--5-of-5">
+          {{ content }}
+        </div>
+        <!-- Pagination links -->
+        <div class="pagination grid__col--centered">
+          {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}" class="previous">نوشته های جدیدتر - </a>
+          {% endif %}
+          {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}" class="next">نوشته های کهنه تر</a>
+          {% endif %}
+        </div>
+      </main>
+
+      {% include footer.html %}
+
+  </body>
+
+</html>

@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<article class="post grid__col" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <h2 class="post--title" itemprop="name headline">{{ page.title }}</h2>
+    <h4 class="post--time">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.jalali_date | date: "%b %-d, %Y" }}
+      </time>
+    </h4>
+  </header>
+
+  <div class="post--content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <div class="post--comments">
+    <h2>نظرات</h2>
+    <div id="disqus_thread"></div>
+    <script>
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://mahmoodzamani.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>حالا چرا جاوااسکریپت رو خاموشن کردی:( اگه خواستی نظرات رو ببینی روشنش کن :)</noscript>
+                                
+
+</article>

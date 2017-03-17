@@ -1,0 +1,8 @@
+// Fonts:
+// =====
+
+@include font-face($Sahel-regular,'/dev/fonts/#{$Sahel-regular}');
+@include font-face($Sahel-bold,'/dev/fonts/#{$Sahel-bold}', 700);
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
