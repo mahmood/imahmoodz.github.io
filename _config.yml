@@ -17,5 +17,5 @@ redcarpet:
 gems: [jekyll-paginate]
 
 # Paginate settings
-paginate: 2
+paginate: 10
 paginate_path: "/page:num/"

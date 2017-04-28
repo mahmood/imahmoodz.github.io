@@ -2,7 +2,6 @@
 // =========
 html {
 	font-family: $Sahel-regular, Lato, Droid Sans, Helvetica, sans-serif;
-	direction: $direction;
 	line-height: $line-height;
 	text-rendering: optimizeLegibility;
 	@include font-smoothing();
@@ -71,6 +70,7 @@ ul {
 }
 
 .container {
+	direction: $direction;
 	display: block;
 	width: 40rem;
 	max-width: 90%;
